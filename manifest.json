@@ -1,0 +1,30 @@
+{
+    "name": "Extensão Web Modelo",
+    "description": "Extensão modelo para web.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": [
+      "activeTab", 
+      "scripting", 
+      "tabs",
+      "storage"
+    ],
+    "host_permissions": [
+      "*://*/*", 
+      "https://api.github.com/"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    
+    "action": {
+      "default_popup": "index.html",
+      "default_title": "Extensão Web Modelo"
+    },
+    "icons": {
+      "16": "/assets/logotipo.png",
+      "32": "/assets/logotipo.png",
+      "48": "/assets/logotipo.png",
+      "128": "/assets/logotipo.png"
+    }
+}
